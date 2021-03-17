@@ -7,7 +7,7 @@ const Toolbar = () => {
         <div className={classes.Toolbar}>
             <Logo />
             <Nav />
-            <Nav />
+            
 
         </div>
     );
