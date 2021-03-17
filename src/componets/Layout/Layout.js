@@ -1,15 +1,15 @@
-import classes  from "./Layout.module.css";
-import Toolbar  from "../Toolbar/Toolbar";
-import Drawer from "../Drawer/Drawer"
+import Drawer from "../Drawer/Drawer";
+import Toolbar from "../Toolbar/Toolbar";
+import classes from "./Layout.module.css";
 
-const Layout =({children}) => {
+const Layout = ({ children }) => {
     return (
         <div className={classes.Layout}>
+            <Toolbar />
+            <Drawer />
             {children}
-            <Toolbar/>
-            <Drawer/>
-           Loyout
         </div>
     );
 }
+
 export default Layout;
