@@ -2,10 +2,10 @@ import classes from "./Logo.module.css";
 import Logotip from "../../img/logotip-sandwich.svg";
 
 
-const Logo = ({ }) => {
+const Logo = () => {
     return (
         <div className={classes.Logo}>
-            <img src={Logotip} />
+            <img src={Logotip} alt="#" />
             <span>Sandwich</span>
         </div>
     );
