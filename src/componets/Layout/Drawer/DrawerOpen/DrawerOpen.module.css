@@ -1,0 +1,23 @@
+.DrawerOpen {
+  height: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+.DrawerOpen > div {
+  height: 3px;
+  width: 2rem;
+  background-color: white;
+}
+.DrawerOpen > div:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 550px) {
+  .DrawerOpen {
+    display: none;
+  }
+}

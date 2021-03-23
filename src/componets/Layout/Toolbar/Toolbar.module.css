@@ -2,12 +2,20 @@
     display: flex;
     justify-content: space-between;
 
-    background-color: rgb(245, 138, 16);
-    font-size: 20px;
+    background-color: rgb(252, 162, 59);
+    font-size: 2rem;
     color: white;
     padding: 15px;
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
+
+    
+@media (max-width: 549px) {
+    .Toolbar {
+     padding: 0px;
+    }
+  }
