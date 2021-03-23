@@ -1,23 +1,23 @@
- import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
+
+import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
 
-const SandwichPreview = () => {
+const SandwichPreview = ({ ingredients }) => {
+  const result = [];
+  for (const ingredient in ingredients) {
+    for (let i = 0; i < ingredients[ingredient]; i++) {
+      result.push(<SandwichIngredient type={ingredient} />)
+    }
+  }
+
   return (
     <div className={classes.SandwichPreview}>
       <div className={classes.sauce}>
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="tomato" />
-        <SandwichIngredient type="salami" />
-        <SandwichIngredient type="olive" />
-        <SandwichIngredient type="mushroom" />
+        {result}
       </div>
     </div>
   );
 }
+
 
 export default SandwichPreview;
