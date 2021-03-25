@@ -4,9 +4,9 @@ import SandwichControls from "./SandwichControls/SandwichControls";
 
 const SandwichBuilder = () => {
   const ingredients = {
-    tomaoes: 20,
-    salami: 10,
-    olives: 15,
+    tomato: 5,
+    salami:4,
+    blackOlive: 3,
   }
   return (
     <div className={classes.SandwichBuilder}>
