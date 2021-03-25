@@ -5,7 +5,7 @@ import SandwichControls from "./SandwichControls/SandwichControls";
 
 const SandwichBuilder = () => {
   const [ingredients, setIngredients] =  useState({
-    tomato: 5,
+    tomato: 15,
     salami:4,
     blackOlive: 3,
   });
