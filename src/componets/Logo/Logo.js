@@ -1,5 +1,5 @@
 import classes from "./Logo.module.css";
-import Logotip from "../../img/logotip-sandwich.svg";
+import Logotip from "../../images/logotip-sandwich.svg";
 
 
 const Logo = () => {
@@ -9,6 +9,7 @@ const Logo = () => {
             <span>Sandwich Builder</span>
         </div>
     );
+
 }
 
 export default Logo;

@@ -2,6 +2,7 @@
 import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
 
+
 const SandwichPreview = ({ ingredients }) => {
   const result = [];
   for (const ingredient in ingredients) {
@@ -12,12 +13,11 @@ const SandwichPreview = ({ ingredients }) => {
 
   return (
     <div className={classes.SandwichPreview}>
-      <div className={classes.sauce}>
+      <div className={classes.color}>
+       
         {result}
       </div>
     </div>
   );
 }
-
-
 export default SandwichPreview;
