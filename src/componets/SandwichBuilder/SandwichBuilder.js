@@ -9,10 +9,26 @@ const SandwichBuilder = () => {
     salami:4,
     blackOlive: 3,
   });
+  function addIngredient(type) {
+    const newIngredients = { ...ingredients };
+    newIngredients[type]++;
+    setIngredients(newIngredients);
+  }
+
+  function removeIngredient(type) {
+    const newIngredients = { ...ingredients };
+    newIngredients[type]--;
+    setIngredients(newIngredients);
+  }
+
   return (
     <div className={classes.SandwichBuilder}>
       <SandwichPreview ingredients={ingredients} />
-      <SandwichControls ingredients={ingredients}/>
+      <SandwichControls
+        ingredients={ingredients}
+        addIngredient={addIngredient}
+        removeIngredient={removeIngredient}
+        />
     </div>
   );
 }
