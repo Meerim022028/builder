@@ -1,16 +1,16 @@
 import SandwichIngredient from "../../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichControl.module.css";
 
-const SandwichControl = ({type,count}) => {
-  return (
-    <div className={classes.SandwichControl}>
-      <button className={classes.more}>+</button>
-      <div className={classes.ingredient}>
-        <SandwichIngredient type={type} fixed />
+const SandwichControl = ({ type, add, remove }) => {
+    return (
+      <div className={classes.SandwichControl}>
+        <button className={classes.more} onClick={() => add(type)}>+</button>
+        <div className={classes.ingredient}>
+          <SandwichIngredient type={type} fixed />
+        </div>
+        <button className={classes.less} onClick={() => remove(type)}>-</button>
       </div>
-      <button className={classes.less}>-</button>
-    </div>
-  );
-}
-
+    );
+  }
+  
 export default SandwichControl;
