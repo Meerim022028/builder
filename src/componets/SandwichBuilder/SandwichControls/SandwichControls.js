@@ -1,19 +1,22 @@
 import SandwichControl from "./SandwichControl/SandwichControl";
-import classes from "./PizzaControls.module.css";
+import classes from "./SandwichControls.module.css";
 
-const SandwichControls = ({ ingredients }) => {
+const SandwichControls = ({ ingredients, addIngredient, removeIngredient }) => {
   const results = [];
   for (const ingredient in ingredients) {
-    results.push(<SandwichControl type={ingredient} />)
+    results.push(<SandwichControl
+        key={ingredient}
+        add={addIngredient}
+        remove={removeIngredient}
+        type={ingredient} />)
   }
 
   return (
     <div className={classes.SandwichControls}>
+      <strong>Ingredients</strong>
       {results}
     </div>
   );
 }
-
-
 
 export default SandwichControls;
