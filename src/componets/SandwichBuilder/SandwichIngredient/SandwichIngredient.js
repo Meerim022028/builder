@@ -3,6 +3,7 @@ import classes from "./SandwichIngredient.module.css";
 import salamibackground from "../../../images/salami.svg";
 import tomatoBackground from "../../../images/tomato.svg";
 import blackOliveBackground from "../../../images/blackOlive.svg";
+import React from "react";
 
 const SandwichIngredient = ({ type }) => {
   const types = {
@@ -52,4 +53,4 @@ const SandwichIngredient = ({ type }) => {
   );
 }
 
-export default SandwichIngredient;
+export default React.memo(SandwichIngredient);
