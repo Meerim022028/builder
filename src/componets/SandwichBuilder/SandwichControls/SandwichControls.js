@@ -1,7 +1,9 @@
 import SandwichControl from "./SandwichControl/SandwichControl";
 import classes from "./SandwichControls.module.css";
+import Button from "../../UI/Button/Button";
 
-const SandwichControls = ({ ingredients, addIngredient, removeIngredient }) => {
+
+const SandwichControls = ({ ingredients, addIngredient, removeIngredient, canBuy }) => {
   const results = [];
   for (const ingredient in ingredients) {
     results.push(<SandwichControl
@@ -15,6 +17,7 @@ const SandwichControls = ({ ingredients, addIngredient, removeIngredient }) => {
     <div className={classes.SandwichControls}>
       <strong>Ingredients</strong>
       {results}
+      <Button disabled={!canBuy}>Order</Button>
     </div>
   );
 }
