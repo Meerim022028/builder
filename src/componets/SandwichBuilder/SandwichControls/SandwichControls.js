@@ -3,7 +3,13 @@ import classes from "./SandwichControls.module.css";
 import Button from "../../UI/Button/Button";
 
 
-const SandwichControls = ({ ingredients, addIngredient, removeIngredient, canBuy }) => {
+const SandwichControls = ({
+  ingredients,
+  addIngredient,
+  removeIngredient,
+  canBuy,
+  setIsBuying
+}) => {
   const results = [];
   for (const ingredient in ingredients) {
     results.push(<SandwichControl
@@ -17,9 +23,14 @@ const SandwichControls = ({ ingredients, addIngredient, removeIngredient, canBuy
     <div className={classes.SandwichControls}>
       <strong>Ingredients</strong>
       {results}
-      <Button disabled={!canBuy}>Order</Button>
+      <Button
+        onClick={() => setIsBuying(true)}
+        disabled={!canBuy}>
+          Order
+      </Button>
     </div>
   );
 }
+
 
 export default SandwichControls;
