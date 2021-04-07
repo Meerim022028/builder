@@ -1,7 +1,7 @@
 
 import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
-import ingredientsBackground from "../../../images/bread.svg";
+import breadBackground from "../../../images/bread.svg";
 
 
 
@@ -20,8 +20,8 @@ return (
       <div/>
       
       <div
-          className={classes.ingredients}
-          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+          className={classes.bread}
+          style={{ backgroundImage: `url(${breadBackground})` }}>
           {result}
         </div>
       </div>
