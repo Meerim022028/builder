@@ -1,7 +1,7 @@
 
 import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
-import ingredientsBackground from "../../../images/bread.svg";
+import Bread from "../../../images/bread.svg";
 
 
 
@@ -16,13 +16,14 @@ const SandwichPreview = ({ ingredients, price }) => {
   
 return (
   <div className={classes.SandwichPreview}>
-    <div className={classes.color}>
-      <div/>
-      
-      <div
-          className={classes.ingredients}
-          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+    <div
+     className={classes.color}>
+        <div className={classes.Bread}>
+            <img src={Bread} alt="#" />
           {result}
+      
+      
+     
         </div>
       </div>
     <div className={classes.price}>{price.toFixed(1)} som</div>
