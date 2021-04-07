@@ -35,19 +35,15 @@
      margin-top: 30px; 
 
 }
-.ingredient{
+.ingredients{
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap; 
-   margin-top: 50%;
-
-}
-.bread {
  width: 260px;
   height: 390px; 
   padding-top: 80px; 
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; 
+  align-items: flex-start;
+
 }
 
 /* .color {
