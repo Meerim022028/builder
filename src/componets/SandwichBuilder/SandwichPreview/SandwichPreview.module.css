@@ -1,4 +1,4 @@
-.SandwichPreview {
+ /* .SandwichPreview { 
   
   flex: 0 0 400px;
   height: 400px;
@@ -17,4 +17,41 @@
   border-radius: 100%;
    position: relative; 
   display: flex;
+ }  */
+.SandwichPreview {
+  flex: 0 0 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
+
+.price {
+  background-color: rgb(252, 162, 59);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
 }
+.ingredients {
+    justify-content: center;
+
+ width: 280px;
+  height: 390px; 
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* .color {
+  width: 400px;
+  height: 400px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+  background-color: #fcc067;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }    */
