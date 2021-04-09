@@ -1,14 +1,13 @@
+.Nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-  .Nav{
-      display: flex;
-      padding-left: 20px;
-      margin-right: 10px;
-      font-size: 22px;
-    }
-    
-    @media (max-width: 549px) {
-    .Nav {
-      display: none;
-      
-    }
+@media (max-width: 549px) {
+  .Nav {
+    flex-direction: column;
+    margin-top: 1rem;
   }
+}
