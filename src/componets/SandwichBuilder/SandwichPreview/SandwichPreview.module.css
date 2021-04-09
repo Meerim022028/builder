@@ -17,12 +17,28 @@
   border-radius: 100%;
    position: relative; 
   display: flex;
- }  */
+ /* }  */
+
+
+/* .color {
+  width: 400px;
+  height: 400px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+  background-color: #fcc067;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }    */
+
 .SandwichPreview {
   flex: 0 0 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1rem;
 } 
 
 .price {
@@ -40,13 +56,8 @@
   
 
 }
-.Bread img{
-  width: 290px;
-  height: 390px; 
-  margin-top: -50px;
-}
 
-/* .color {
+.sandwich {
   width: 400px;
   height: 400px;
   margin-right: 1rem;
@@ -57,4 +68,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
- }    */
+}
+.Bread img{
+  width: 290px;
+  height: 390px; 
+  margin-top: -50px;
+} 
