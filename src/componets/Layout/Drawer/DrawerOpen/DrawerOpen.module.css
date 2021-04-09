@@ -1,23 +1,27 @@
-.DrawerOpen {
-  height: 3rem;
-  padding: 1rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  margin-right: .5rem;
-  cursor: pointer;
+.Drawer .content {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+
+  color: white;
+  background-color: rgb(252, 162, 59);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  font-size: 2rem;
+  transition: transform .3s ease-out;
 }
-.DrawerOpen > div {
-  height: 3px;
-  width: 2rem;
-  background-color: white;
+
+.open {
+  transform: translateX(0);
 }
-.DrawerOpen > div:not(:last-child) {
-  margin-bottom: .5rem;
+.closed {
+  transform: translateX(-260px);
 }
 
 @media (min-width: 550px) {
-  .DrawerOpen {
+  .Drawer {
     display: none;
   }
 }
