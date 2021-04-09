@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import classes from "./SandwichBuilder.module.css";
 import SandwichPreview from "./SandwichPreview/SandwichPreview";
 import SandwichControls from "./SandwichControls/SandwichControls";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
+import axios from "axios";
 
 
 const SandwichBuilder = () => {
@@ -17,20 +18,21 @@ const SandwichBuilder = () => {
     salad:2,
    
   };
-  const [ingredients, setIngredients] = useState({
-    tomato: 1,
-    salami: 1,
-    blackOlive: 1,
-    cucumber:1,
-    cheese:1,
-    meat:1,
-    salad:1,
-
-
-  });
+  const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(150);
   const [canBuy, setCanBuy] = useState(true);
   const [isBuying, setIsBuying] = useState(false);
+
+  useEffect(
+    () => axios
+      .get('https://builder2-f8ec3-default-rtdb.firebaseio.com/default')
+      .then(response => {
+        setPrice(response.data.price);
+
+       
+        setIngredients(response.data.ingredients);
+      }), []
+  );
 
   function checkCanBuy(newIngredients) {
     const totalIngredients = Object.values(newIngredients)
