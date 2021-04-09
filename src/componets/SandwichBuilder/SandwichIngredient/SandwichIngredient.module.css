@@ -1,3 +1,4 @@
 .SandwichIngredient{
   /* position: absolute; */
+  display: flex;
 }
