@@ -1,7 +1,7 @@
 import classes from "./SandwichIngredient.module.css";
 
 import salamibackground from "../../../images/salami.svg";
-// import tomatoBackground from "../../../images/tomato.svg";
+//  import tomatoBackground from "../../../images/tomato.svg";
 import blackOliveBackground from "../../../images/blackOlive.svg";
 import cucumberBackground from "../../../images/cucumber.svg";
 import cheeseBackground from "../../../images/cheese.svg";
@@ -16,6 +16,7 @@ import React from "react";
 const SandwichIngredient = ({ type }) => {
   const types = {
     // salami: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
+    salami: {backgroundColor: "black", width: "100%", height: "30px"},
     salami: {backgroundImage: `url(${salamibackground})`, width: "30px", height: "30px"},
     tomato: { backgroundColor: "tomato", width: "100%", height: "35px" },
     blackOlive: { backgroundImage: `url(${blackOliveBackground})`, width: "10px", height: "10px" },
