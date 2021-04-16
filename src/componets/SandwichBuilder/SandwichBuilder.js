@@ -16,6 +16,8 @@ const SandwichBuilder = () => {
     cheese:1,
     meat:4,
     salad:2,
+    Bread:2,
+    Breadtwo:2,
    
   };
   const [ingredients, setIngredients] = useState({});
@@ -25,7 +27,7 @@ const SandwichBuilder = () => {
 
   useEffect(
     () => axios
-      .get('https://builder2-f8ec3-default-rtdb.firebaseio.com/default')
+      .get('https://builder2-f8ec3-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
 
