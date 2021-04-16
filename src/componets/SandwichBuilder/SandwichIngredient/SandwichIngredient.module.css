@@ -1,4 +1,6 @@
 .SandwichIngredient{
   /* position: absolute; */
   display: flex;
+  margin-left: -20%;
+  flex-direction: row;
 }

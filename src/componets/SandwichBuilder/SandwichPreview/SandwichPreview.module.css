@@ -53,7 +53,8 @@
 }
 .ingredient{
   display: flex;
-  
+  margin-left: -50%;
+
 
 }
 
@@ -69,8 +70,11 @@
   justify-content: center;
   align-items: center;
 }
+
+
 .Bread img{
-  width: 290px;
-  height: 390px; 
+   width: 530px;
+  height: 530px; 
   margin-top: -50px;
-} 
+  margin-left: -20%;
+}  

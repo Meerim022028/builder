@@ -1,7 +1,8 @@
 
 import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
-import Bread from "../../../images/bread.svg";
+import Bread from "../../../images/Bread.svg";
+
 
 
 
@@ -21,9 +22,6 @@ return (
         <div className={classes.Bread}>
             <img src={Bread} alt="#" />
           {result}
-      
-      
-     
         </div>
       </div>
     <div className={classes.price}>{price.toFixed(1)} som</div>
