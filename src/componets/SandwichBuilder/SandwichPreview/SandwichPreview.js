@@ -1,9 +1,6 @@
-
 import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
-import Bread from "../../../images/Bread.svg";
-
-
+import Bread from "../../../images/bread.svg";
 
 
 const SandwichPreview = ({ ingredients, price }) => {
