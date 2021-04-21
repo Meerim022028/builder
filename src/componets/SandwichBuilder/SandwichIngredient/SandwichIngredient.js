@@ -23,25 +23,25 @@ const SandwichIngredient = ({ type }) => {
 
 
 
-  function getPosition(ingredientWidth) {
-    const SandwichDiameter = 380;
-    const SandwichRadius = SandwichDiameter / 2;
-    const ingredientRadius = parseInt(ingredientWidth) / 2;
+  // function getPosition(ingredientWidth) {
+  //   const SandwichDiameter = 380;
+  //   const SandwichRadius = SandwichDiameter / 2;
+  //   const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-    const ingredientTop = Math.round(Math.random() * SandwichDiameter);
-    const ingredientLeft = Math.round(Math.random() * SandwichDiameter);
+  //   const ingredientTop = Math.round(Math.random() * SandwichDiameter);
+  //   const ingredientLeft = Math.round(Math.random() * SandwichDiameter);
 
-    const distance = Math.sqrt(
-      Math.pow(ingredientTop - SandwichRadius, 2) + Math.pow(ingredientLeft - SandwichRadius, 2)
-    ) + ingredientRadius;
+  //   const distance = Math.sqrt(
+  //     Math.pow(ingredientTop - SandwichRadius, 2) + Math.pow(ingredientLeft - SandwichRadius, 2)
+  //   ) + ingredientRadius;
 
-    return distance < SandwichRadius
-      ? {
-        top: ingredientTop - ingredientRadius,
-        left: ingredientLeft - ingredientRadius
-      }
-      : getPosition(ingredientWidth);
-  }
+  //   return distance < SandwichRadius
+  //     ? {
+  //       top: ingredientTop - ingredientRadius,
+  //       left: ingredientLeft - ingredientRadius
+  //     }
+  //     : getPosition(ingredientWidth);
+  // }
 
   // Get random position for this ingredient.
   // const position = getPosition(types[type].width);
