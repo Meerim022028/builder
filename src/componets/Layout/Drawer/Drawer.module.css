@@ -1,4 +1,4 @@
-.Drawer .content {
+/* .Drawer .content {
   width: 250px;
   height: 100%;
   position: fixed;
@@ -9,6 +9,34 @@
   font-size: 2rem;
   color: white;
   background-color: tomato;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  transition: transform .3s ease-out;
+}
+
+.open {
+  transform: translateX(0);
+}
+.close {
+  transform: translateX(-260px);
+}
+
+@media (min-width: 550px) {
+  .Drawer  {
+    display: none;
+  }
+} */
+
+.Drawer .content {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(236, 136, 43);
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
 }
