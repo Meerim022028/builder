@@ -6,7 +6,7 @@ const Logo = () => {
     return (
         <div className={classes.Logo}>
             <img src={Logotip} alt="#" />
-            <span>Sandwich Builder</span>
+            <span>Burger Builder</span>
         </div>
     );
 
