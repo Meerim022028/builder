@@ -1,4 +1,4 @@
-.Drawer .content {
+/* .Drawer .content {
   width: 250px;
   height: 100%;
   position: fixed;
@@ -22,6 +22,30 @@
 
 @media (min-width: 550px) {
   .Drawer {
+    display: none;
+  }
+} */
+
+.DrawerOpen {
+  height: 3rem;
+  padding: .5rem;
+  margin: .5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.DrawerOpen > div {
+  height: 3px;
+  width: 2rem;
+  background-color: white;
+}
+.DrawerOpen > div:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 550px) {
+  .DrawerOpen {
     display: none;
   }
 }
