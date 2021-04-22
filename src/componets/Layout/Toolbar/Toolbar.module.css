@@ -10,22 +10,22 @@
     top: 0;
     left: 0;
     color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(250, 215, 15, 0.5);
 }   
 @media (max-width: 549px) {
      .Toolbar nav {
       display: none;
  } 
 }
-
-  /* .Toolbar {
+/*  
+ .Toolbar {
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
     left: 0;
     padding: 0 1rem;
-    z-index: 1;
+    z-index: 1; 
   
     font-size: 2rem;
     color: white;
@@ -37,4 +37,4 @@
     .Toolbar nav {
       display: none;
     }
-  }  */
+  }   */
