@@ -9,15 +9,14 @@ import axios from "axios";
 
 const SandwichBuilder = () => {
   const prices = {
+    cheese:2,
     tomato: 3.5,
-    salami: 4,
-    blackOlive: .3,
-    cucumber:.3,
-    cheese:1,
     meat:4,
     salad:2,
-    Bread:2,
-    Breadtwo:2,
+    bacon:2,
+    onion:1,
+    // Bread:2,
+    // Breadtwo:2,
    
   };
   const [ingredients, setIngredients] = useState({});
