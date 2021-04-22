@@ -10,6 +10,8 @@ import saladBackground from "../../../images/salad.svg";
 
 
 
+
+
 import React from "react";
 const SandwichIngredient = ({ type }) => {
   const types = {
