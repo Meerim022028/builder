@@ -18,7 +18,7 @@ const SandwichIngredient = ({ type }) => {
     tomato: { backgroundImage: `url(${tomatoBackground})`, width: "100%", height: "30px" },
     Bacon: { backgroundImage: `url(${baconBackground})`, width: "100%", height: "10px" },
     onions: { backgroundImage: `url(${onionsBackground})`, width: "100%", height: "30px" },
-    Cheese: { backgroundImage: `url(${cheeseBackground})`, width: "100%", height: "60px" },
+    cheese: { backgroundImage: `url(${cheeseBackground})`, width: "100%", height: "60px" },
     meat: { backgroundImage: `url(${meatBackground})`, width: "100%", height: "45px" },
     salad: { backgroundImage: `url(${saladBackground})`, width: "100%", height: "45px" },
   };
