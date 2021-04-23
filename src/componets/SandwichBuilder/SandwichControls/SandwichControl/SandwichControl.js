@@ -9,8 +9,8 @@ const SandwichControl = ({ type, add, remove }) => {
     tomato:" tomato",
     salad:"salad",
     meat:"meat",
-    bacon:"bacon",
-    onion:"onion",
+    Bacon:"Bacon",
+    onions:"onions",
   }
   return (
     <div className={classes.SandwichControl}>

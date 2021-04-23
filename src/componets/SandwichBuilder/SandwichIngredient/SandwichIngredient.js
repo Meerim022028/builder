@@ -16,9 +16,9 @@ import React from "react";
 const SandwichIngredient = ({ type }) => {
   const types = {
     tomato: { backgroundImage: `url(${tomatoBackground})`, width: "100%", height: "30px" },
-    bacon: { backgroundImage: `url(${baconBackground})`, width: "100%", height: "10px" },
+    Bacon: { backgroundImage: `url(${baconBackground})`, width: "100%", height: "10px" },
     onions: { backgroundImage: `url(${onionsBackground})`, width: "100%", height: "30px" },
-    cheese: { backgroundImage: `url(${cheeseBackground})`, width: "100%", height: "60px" },
+    Cheese: { backgroundImage: `url(${cheeseBackground})`, width: "100%", height: "60px" },
     meat: { backgroundImage: `url(${meatBackground})`, width: "100%", height: "45px" },
     salad: { backgroundImage: `url(${saladBackground})`, width: "100%", height: "45px" },
   };
