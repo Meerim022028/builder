@@ -1,0 +1,20 @@
+.CheckoutForm div {
+    padding: .3rem 1rem;
+  }
+  .CheckoutForm div > label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  .CheckoutForm div > label:after {
+    content: ":";
+  }
+  .CheckoutForm div > input {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid lightgray;
+    padding-left: 1rem;
+  }
+  .CheckoutForm div > input:focus {
+    outline: none;
+    border-color: gray;
+  }
