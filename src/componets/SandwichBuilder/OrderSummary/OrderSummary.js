@@ -1,14 +1,13 @@
 import classes from "./OrderSummary.module.css";
 
-
 const OrderSummary = ({ ingredients, price }) => {
   const labels = {
-    Cheese:"cheese",
-    tomato:" tomato",
-    salad:"salad",
-    meat:"meat",
-    bacon:"bacon",
-    onion:"onion",
+    tomato: "Tomatoes",
+    bacon: "Bacon",
+    cheese: "Cheese ",
+    salad: "Salad",
+    meat: " Meat",
+    onion: "Onion ",
   }
   const results = Object.keys(ingredients)
     .map(type => <li>{labels[type]}: {ingredients[type]}</li>);
@@ -23,4 +22,5 @@ const OrderSummary = ({ ingredients, price }) => {
     </div>
   );
 }
+
 export default OrderSummary;
