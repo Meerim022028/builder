@@ -10,7 +10,9 @@ import { Redirect, Route, Switch } from "react-router";
 const App = () => {
   return (
     <div className="App">
+
       <Layout>
+      <h1 className="Burger">Burger</h1>
         <Switch>
           <Route path="/" component={SandwichBuilder} exact />
           <Route path="/checkout" component={Checkout} />
