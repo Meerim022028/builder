@@ -8,7 +8,7 @@ const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
     <div className={classes.CheckoutSummary}>
       <div>
         <SandwichPreview ingredients={{
-          tomato: 5, 
+          tomato: 3, 
           bacon: 4,
           cheese: 2,
         }} price={150} />
