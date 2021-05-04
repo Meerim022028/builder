@@ -5,8 +5,7 @@ import Button from "../../UI/Button/Button";
 
 const SandwichControls = ({
   ingredients,
-  addIngredient,
-  removeIngredient,
+ 
   startOrdering
 }) => {
   const results = [];
@@ -17,8 +16,6 @@ const SandwichControls = ({
     // Render pizza control for this ingredient
     results.push(<SandwichControl
         key={ingredient}
-        add={addIngredient}
-        remove={removeIngredient}
         count={ingredients[ingredient]}
         type={ingredient} />)
   }
