@@ -7,12 +7,12 @@ import { useDispatch } from "react-redux";
 const SandwichControl = ({ type, count }) => {
   const dispatch = useDispatch();
   const name ={
-    cheese:"cheese",
-    tomato:" tomato",
-    salad:"salad",
-    meat:"meat",
+    cheese:"Cheese",
+    tomato:" Tomato",
+    salad:"Salad",
+    meat:"Meat",
     Bacon:"Bacon",
-    onions:"onions",
+    onions:"Onions",
   }
   return (
     <div className={classes.SandwichControl}>
