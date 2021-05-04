@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import classes from "./SandwichBuilder.module.css";
 import SandwichPreview from "./SandwichPreview/SandwichPreview";
 import SandwichControls from "./SandwichControls/SandwichControls";
