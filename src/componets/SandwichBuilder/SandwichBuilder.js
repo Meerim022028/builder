@@ -18,7 +18,7 @@ const SandwichBuilder = ({ history }) => {
     onions:1,
   };
  const ingredients = useSelector(state => state.ingredients);
-  const [price, setPrice] = useState(0);
+ const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
 
   // useEffect(loadDefaults, []);
@@ -39,7 +39,7 @@ const SandwichBuilder = ({ history }) => {
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
-    setPrice(price + prices[type]);
+   
 
   }
 
@@ -47,7 +47,7 @@ const SandwichBuilder = ({ history }) => {
     if (ingredients[type]) {
       const newIngredients = { ...ingredients };
       newIngredients[type]--;
-      setPrice(price - prices[type]);
+     
   
     }
   }
