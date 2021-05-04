@@ -5,7 +5,7 @@ import SandwichControls from "./SandwichControls/SandwichControls";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
-import axios from "axios";
+// import axios from "axios";
 import { useSelector } from "react-redux";
 
 const SandwichBuilder = ({ history }) => {
@@ -39,19 +39,9 @@ const SandwichBuilder = ({ history }) => {
   }
 
   function finishOrdering() {
-    axios
-      .post('https://builder2-f8ec3-default-rtdb.firebaseio.com/orders.json', {
-        ingredients: ingredients,
-        price: price,
-        address: "1234 Jusaeva str",
-        phone: "0 777 777 777",
-        name: "Sadyr Japarov",
-      })
-      .then(() => {
-        setOrdering(false);
-        // loadDefaults();
-        history.push('/checkout');
-      });
+    setOrdering(false);
+    // loadDefaults();
+    history.push('/checkout');
   }
 
   return (
