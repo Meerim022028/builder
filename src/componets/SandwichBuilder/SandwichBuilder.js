@@ -9,14 +9,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 
 const SandwichBuilder = ({ history }) => {
-  const prices = {
-    cheese:2,
-    tomato: 3.5,
-    meat:4,
-    salad:2,
-    Bacon:2,
-    onions:1,
-  };
+
  const ingredients = useSelector(state => state.ingredients);
  const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
@@ -36,22 +29,7 @@ const SandwichBuilder = ({ history }) => {
   //     });
   // }
 
-  function addIngredient(type) {
-    const newIngredients = { ...ingredients };
-    newIngredients[type]++;
-   
-
-  }
-
-  function removeIngredient(type) {
-    if (ingredients[type]) {
-      const newIngredients = { ...ingredients };
-      newIngredients[type]--;
-     
-  
-    }
-  }
-
+ 
   function startOrdering() {
     setOrdering(true);
   }
@@ -83,8 +61,8 @@ const SandwichBuilder = ({ history }) => {
         price={price} />
       <SandwichControls
         ingredients={ingredients}
-        addIngredient={addIngredient}
-        removeIngredient={removeIngredient}
+        // addIngredient={addIngredient}
+        // removeIngredient={removeIngredient}
         startOrdering={startOrdering}
         />
       <Modal
