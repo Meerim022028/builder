@@ -17,22 +17,24 @@ const prices = {
     Bacon:2,
     onions:1,
   };
-
-const builderReducer = (state = initialState, action) => {
-    const newState = { ...state};
+  const builderReducer = (state = initialState, action) => {
+    const newState = { ...state };
 
     switch (action.type) {
         case "ADD_INGREDIENT":
             newState.ingredients[action.ingredient]++;
             newState.price += prices[action.ingredient];
             break;
-    case "REMOVE_INGREDIENT":
-        newState.ingredients[action.ingredient]--;
-        break;
+        case "REMOVE_INGREDIENT":
+            newState.ingredients[action.ingredient]--;
+            newState.price -= prices[action.ingredient];
+
+            break;
 
         default:
             break;
     }
+
     return newState;
 }
 
