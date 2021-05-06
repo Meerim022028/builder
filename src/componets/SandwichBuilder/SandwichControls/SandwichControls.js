@@ -11,7 +11,7 @@ const SandwichControls = ({
   for (const ingredient in ingredients) {
     // Add ingredient number to totals number
     total += ingredients[ingredient];
-    // Render pizza control for this ingredient
+    // Render sandwich control for this ingredient
     results.push(<SandwichControl
         key={ingredient}
         count={ingredients[ingredient]}
@@ -20,7 +20,7 @@ const SandwichControls = ({
 
   return (
     <div className={classes.SandwichControls}>
-      <strong>Gems</strong>
+      <strong>Ingredients</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
