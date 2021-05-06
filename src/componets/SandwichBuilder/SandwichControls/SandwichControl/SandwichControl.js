@@ -16,12 +16,12 @@ const SandwichControl = ({ type, count }) => {
   }
   return (
     <div className={classes.SandwichControl}>
- <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient:type })}>+</Button>
+      <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>
       <div className={classes.ingredient}>
-       
+
         {name[type]}
       </div>
-      <Button onClick={() => dispatch({ type: "REMOVE_INGREDIENT", ingredient:type })} disabled={!count}>-</Button>
+      <Button onClick={() => dispatch({ type: "REMOVE_INGREDIENT", ingredient: type })} disabled={!count}>-</Button>
     </div>
   );
 }
