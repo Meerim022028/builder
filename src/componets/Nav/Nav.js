@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <ul className={classes.Nav}>
       <NavItem url="/" active>Builder</NavItem>
-      <NavItem url="/">Checkout</NavItem>
+      <NavItem url="/">Order</NavItem>
     </ul>
   );
 }
