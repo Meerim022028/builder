@@ -2,10 +2,8 @@ import SandwichControl from "./SandwichControl/SandwichControl";
 import classes from "./SandwichControls.module.css";
 import Button from "../../UI/Button/Button";
 
-
 const SandwichControls = ({
   ingredients,
- 
   startOrdering
 }) => {
   const results = [];
@@ -22,11 +20,10 @@ const SandwichControls = ({
 
   return (
     <div className={classes.SandwichControls}>
-      <strong>Ingredients</strong>
+      <strong>Gems</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
   );
 }
-
 export default SandwichControls;
