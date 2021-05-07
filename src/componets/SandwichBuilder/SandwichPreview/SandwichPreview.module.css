@@ -66,15 +66,20 @@
   border-radius: 100%;
   background-color: #fcc067;
 
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 
 
 .Bread img{
-   width: 530px;
+    /* width: 530px;
   height: 530px; 
-  margin-top: -50px;
-  margin-left: -20%;
+  margin-top: -50px; */
+  margin-left: -20%; 
+  height: 20%;
+  width: 100%;
 }  
+/* .BreadBottom img{
+  margin-top: 70%;
+} */
