@@ -19,11 +19,11 @@ return (
      className={classes.color}>
         <div className={classes.Bread}>
              <img src={Bread} alt="#" />
-
+ {result}
              <div className={classes.BreadBottom}>
                <img src={BreadBottom} alt="#" />
              </div>
-          {result}
+         
         </div>
       </div>
     <div className={classes.price}>{price.toFixed(1)} som</div>
