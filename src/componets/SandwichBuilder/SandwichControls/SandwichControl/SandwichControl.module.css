@@ -1,8 +1,8 @@
 .SandwichControl {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: .5rem 0;
+    align-items: center; 
+    margin: .7rem 0;
 
     /* padding-bottom: 30px; */
     /* margin-right: -15%; */
@@ -13,16 +13,19 @@
     
   }
   .SandwichControl button {
-    border: 0;
-  margin: 0 .5rem;
-  border-radius: 100%;
-  width: 2rem;
-  height: 2rem;
+    /* border: 0; */
+  /* margin: 0 .5rem; */
+  border-radius: 100%; 
+    width: 2.7rem;
+  height: 2.4rem;  
   background-color: rgb(253, 195, 69);
   color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer;
+  /* font-weight: bold; */
+  /* font-size: 1.5rem; */
+   cursor: pointer; 
+  /* align-items: center;  */
+
+
  
   }
   .SandwichControl button:hover {
