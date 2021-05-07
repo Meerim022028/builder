@@ -2,7 +2,7 @@ import classes from "./SandwichIngredient.module.css";
 // import ketchupbackground from "../../../images/ketchup.svg";
 import tomatoBackground from "../../../images/tomato.svg";
 import baconBackground from "../../../images/bacon.svg";
-import onionsBackground from "../../../images/onions.svg";
+import eggBackground from "../../../images/egg.svg";
 import cheeseBackground from "../../../images/cheese.svg";
 import meatBackground from "../../../images/meat.svg";
 import saladBackground from "../../../images/salad.svg";
@@ -15,42 +15,15 @@ import saladBackground from "../../../images/salad.svg";
 import React from "react";
 const SandwichIngredient = ({ type }) => {
   const types = {
-    tomato: { backgroundImage: `url(${tomatoBackground})`, width: "100%", height: "30px" },
-    Bacon: { backgroundImage: `url(${baconBackground})`, width: "100%", height: "10px" },
-    onions: { backgroundImage: `url(${onionsBackground})`, width: "100%", height: "30px" },
-    cheese: { backgroundImage: `url(${cheeseBackground})`, width: "100%", height: "60px" },
-    meat: { backgroundImage: `url(${meatBackground})`, width: "100%", height: "45px" },
-    salad: { backgroundImage: `url(${saladBackground})`, width: "100%", height: "45px" },
+   tomato: { backgroundImage: `url(${tomatoBackground})`, width: "100%", height: "20px" },
+    bacon: { backgroundImage: `url(${baconBackground})`, width: "100%", height: "10%" },
+    egg: { backgroundImage: `url(${eggBackground})`, width: "100%", height: "70px" },
+    cheese: { backgroundImage: `url(${cheeseBackground})`, width: "100%", height: "50px" },
+    meat: { backgroundImage: `url(${meatBackground})`, width: "100%", height: "50px" },
+    salad: { backgroundImage: `url(${saladBackground})`, width: "100%", height: "60px" },
+    
   };
 
-
-
-  // function getPosition(ingredientWidth) {
-  //   const SandwichDiameter = 380;
-  //   const SandwichRadius = SandwichDiameter / 2;
-  //   const ingredientRadius = parseInt(ingredientWidth) / 2;
-
-  //   const ingredientTop = Math.round(Math.random() * SandwichDiameter);
-  //   const ingredientLeft = Math.round(Math.random() * SandwichDiameter);
-
-  //   const distance = Math.sqrt(
-  //     Math.pow(ingredientTop - SandwichRadius, 2) + Math.pow(ingredientLeft - SandwichRadius, 2)
-  //   ) + ingredientRadius;
-
-  //   return distance < SandwichRadius
-  //     ? {
-  //       top: ingredientTop - ingredientRadius,
-  //       left: ingredientLeft - ingredientRadius
-  //     }
-  //     : getPosition(ingredientWidth);
-  // }
-
-  // Get random position for this ingredient.
-  // const position = getPosition(types[type].width);
-  // types[type].top = position.top + "px";
-  // types[type].left = position.left + "px";
-  // Get random rotation for this ingredient.
-  // types[type].transform = `rotate(${Math.round(Math.random() * 10)}deg)`;
 
   return (
     <div 
@@ -63,3 +36,52 @@ const SandwichIngredient = ({ type }) => {
 }
 
 export default React.memo(SandwichIngredient);
+
+
+
+
+// import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+
+// import classes from './SandwichIngredient.module.css'
+
+// class SandwichIngredient extends Component {
+//     render() {
+//         let ingredient = null;
+
+//         switch (this.props.type) {
+//             case ('bread-bottom'):
+//                 ingredient = <div className={classes.BreadBottom}></div>;
+//                 break;
+//             case ('bread-top'):
+//                 ingredient = (
+//                     <div className={classes.BreadTop}>
+//                         <div className={classes.Seeds1}></div>
+//                         <div className={classes.Seeds2}></div>
+//                     </div>
+//                 );
+//                 break;
+//             case ('meat'):
+//                 ingredient = <div className={classes.Meat}></div>;
+//                 break;
+//             case ('cheese'):
+//                 ingredient = <div className={classes.Cheese}></div>;
+//                 break;
+//             case ('salad'):
+//                 ingredient = <div className={classes.Salad}></div>;
+//                 break;
+//             case ('bacon'):
+//                 ingredient = <div className={classes.Bacon}></div>;
+//                 break;
+//             default:
+//                 ingredient = null;
+//         }
+//         return ingredient;
+//     }
+// };
+
+// SandwichIngredient.propTypes = {
+//     type: PropTypes.string.isRequired
+// };
+
+// export default SandwichIngredient;
