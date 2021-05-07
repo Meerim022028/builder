@@ -10,9 +10,9 @@ const SandwichControl = ({ type, count }) => {
     cheese:"Cheese",
     tomato:" Tomato",
     salad:"Salad",
-    meat:"Meat",
-    Bacon:"Bacon",
-    onions:"Onions",
+    meat:"Meat ",
+    bacon:"Bacon",
+    egg:"Egg",
   }
   return (
     <div className={classes.SandwichControl}>
