@@ -12,7 +12,7 @@
     color: white;
     box-shadow: 0 0 10px rgba(250, 215, 15, 0.5);
 }   
-@media (max-width: 549px) {
+@media (max-width: 632px) {
      .Toolbar nav {
       display: none;
  } 
