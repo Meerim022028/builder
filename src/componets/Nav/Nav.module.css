@@ -5,7 +5,7 @@
   display: flex;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 632px) {
   .Nav {
     flex-direction: column;
     margin-top: 1rem;
