@@ -8,14 +8,16 @@
 .NavItem a:hover {
   border-color: white; 
   background-color: rgb(255, 180, 19);
-  border-bottom: 5px solid white; 
+  border-bottom: 7px 5px solid white; 
+
+
 }
 .NavItem a:active,
 .NavItem a.active {
   border-color: white;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 632px) {
   .NavItem a {
     /* border-bottom: none; */
      border-right: 10px solid transparent; 
