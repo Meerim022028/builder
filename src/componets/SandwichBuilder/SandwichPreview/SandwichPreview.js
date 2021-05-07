@@ -1,6 +1,7 @@
 import SandwichIngredient from "../SandwichIngredient/SandwichIngredient";
 import classes from "./SandwichPreview.module.css";
 import Bread from "../../../images/bread.svg";
+import BreadBottom from "../../../images/breadtwo.svg";
 
 
 const SandwichPreview = ({ ingredients, price }) => {
@@ -17,7 +18,11 @@ return (
     <div
      className={classes.color}>
         <div className={classes.Bread}>
-            <img src={Bread} alt="#" />
+             <img src={Bread} alt="#" />
+
+             <div className={classes.BreadBottom}>
+               <img src={BreadBottom} alt="#" />
+             </div>
           {result}
         </div>
       </div>
