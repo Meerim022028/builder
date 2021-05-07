@@ -2,11 +2,11 @@ body{
     font-family: 'Merienda', cursive;    
     margin: 0%;
     font-size: 20px;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     
-    background-image: 
+    /* background-image: 
     linear-gradient(to right, rgba(247, 226, 158, 0.7), rgba(245, 198, 69, 0.7)),
-    url(./images/back.jpg);
+    url(./images/back.jpg); */
    
     
 }
