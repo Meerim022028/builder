@@ -4,8 +4,9 @@ const initialState ={
         tomato: 2,
         meat:2,
         salad:2,
-        Bacon:2,
-        onions:1,
+        bacon:2,
+        egg:1,
+       
     },
     price:150,
 };
@@ -14,8 +15,9 @@ const prices = {
     tomato: 3.5,
     meat:4,
     salad:2,
-    Bacon:2,
-    onions:1,
+    bacon:2,
+    egg:1,
+   
   };
   const builderReducer = (state = initialState, action) => {
     const newState = { ...state };
