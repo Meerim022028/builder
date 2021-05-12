@@ -3,11 +3,12 @@ import CheckoutForm from "../Checkout/CheckoutSummary/CheckoutForm/CheckoutForm"
 import classes from "./Checout.module.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
+import withAxios from "../withAxios";
 
 
 const Checkout = ({ history }) => {
-  const ingredients = useSelector(state => state.ingredients);
-  const price = useSelector(state => state.price);
+  const ingredients = useSelector(state => state.builder.ingredients);
+  const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
     history.replace('/');
@@ -16,7 +17,7 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('https://builder2-f8ec3-default-rtdb.firebaseio.com/orders.json', {
+    axios.post('/orders.json', {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
@@ -39,4 +40,4 @@ const Checkout = ({ history }) => {
   );
 }
  
-export default Checkout;
+export default withAxios(Checkout, axios);
