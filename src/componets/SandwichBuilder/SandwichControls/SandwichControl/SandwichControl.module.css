@@ -1,29 +1,29 @@
-.SandwichControl {
+ .SandwichControl {
     display: flex;
     justify-content: center;
     align-items: center; 
     margin: .7rem 0;
 
-    /* padding-bottom: 30px; */
-    /* margin-right: -15%; */
-  }
+     padding-bottom: 30px; 
+    margin-right: -15%; 
+   }
   .SandwichControl .ingredient div {
     position: static;
     margin: 0 .5rem;
     
   }
   .SandwichControl button {
-    /* border: 0; */
-  /* margin: 0 .5rem; */
-  border-radius: 100%; 
+   border: 0; 
+   margin: 0 .5rem; 
+   border-radius: 100%; 
     width: 2.7rem;
   height: 2.4rem;  
   background-color: rgb(253, 195, 69);
   color: white;
-  /* font-weight: bold; */
-  /* font-size: 1.5rem; */
+  font-weight: bold; 
+  font-size: 1.5rem; 
    cursor: pointer; 
-  /* align-items: center;  */
+ align-items: center;  
 
 
  
@@ -34,3 +34,38 @@
   .SandwichControl button:focus {
     outline: none;
   }
+
+
+
+
+
+
+/* 
+
+  .SandwichCControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+    
+  }
+  .SandwichControl .ingredient div {
+    position: static;
+    margin: 0.5rem;
+  }
+  
+  .ingredient{
+    font-size: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .Example{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+  } 
+  .order {
+    height: 40px;
+    width: 60px;
+  } */
