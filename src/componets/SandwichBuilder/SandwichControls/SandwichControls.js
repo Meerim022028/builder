@@ -1,6 +1,6 @@
+import Button from "../../UI/Button/Button";
 import SandwichControl from "./SandwichControl/SandwichControl";
 import classes from "./SandwichControls.module.css";
-import Button from "../../UI/Button/Button";
 
 const SandwichControls = ({
   ingredients,
@@ -26,4 +26,5 @@ const SandwichControls = ({
     </div>
   );
 }
+
 export default SandwichControls;
