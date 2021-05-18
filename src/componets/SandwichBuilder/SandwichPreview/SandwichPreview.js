@@ -14,7 +14,7 @@ const SandwichPreview = ({ ingredients, price }) => {
 
   
 return (
-  <div className={classes.SandwichPreview}>
+       <div className={classes.SandwichPreview}>
     <div
      className={classes.color}>
         <div className={classes.Bread}>
