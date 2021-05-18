@@ -40,32 +40,33 @@
 
 
 
-/* 
+
 
   .SandwichCControl {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .5rem 0;
+    margin: .1rem 0;
     
   }
   .SandwichControl .ingredient div {
     position: static;
-    margin: 0.5rem;
+    margin: 0.2rem;
   }
   
   .ingredient{
     font-size: 1.5rem;
-    margin: .5rem;
+    margin: .1rem;
   }
   
   .Example{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+     width: 70%; 
    
   } 
   .order {
     height: 40px;
-    width: 60px;
-  } */
+    width: 50px;
+  }
