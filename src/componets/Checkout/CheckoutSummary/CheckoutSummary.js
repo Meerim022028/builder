@@ -9,8 +9,8 @@ const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
       <div>
         <SandwichPreview ingredients={{
           tomato: 3, 
-          bacon: 4,
-          cheese: 2,
+          bacon: 1,
+          cheese: 1,
         }} price={150} />
       </div>
       <CheckoutForm
