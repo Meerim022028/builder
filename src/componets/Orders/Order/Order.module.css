@@ -1,5 +1,5 @@
 .Order{
-    
+    list-style-type: none;
     text-align: center;
     border: solid 1px rgb(153, 153, 151);
 }
