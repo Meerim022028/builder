@@ -1,5 +1,5 @@
-body{
-    font-family: 'Merienda', cursive;    
+body {
+    font-family: 'Merienda', cursive;
     margin: 0%;
     font-size: 20px;
     /* opacity: 0.6; */
@@ -7,10 +7,11 @@ body{
     /* background-image: 
     linear-gradient(to right, rgba(247, 226, 158, 0.7), rgba(245, 198, 69, 0.7)),
     url(./images/back.jpg); */
-   
-    
+
+
 }
-.Burger{
+
+.Burger {
     text-align: center;
     color: rgb(206, 145, 14);
 }
