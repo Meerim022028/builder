@@ -1,7 +1,7 @@
 import SandwichPreview from "../SandwichBuilder/SandwichPreview/SandwichPreview";
 import CheckoutForm from "../Checkout/CheckoutSummary/CheckoutForm/CheckoutForm";
 import classes from "./Checout.module.css";
-import axios from "axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
 import withAxios from "../withAxios";
 
