@@ -79,6 +79,7 @@
   margin-left: -20%; 
   height: 20%;
   width: 100%;
+  /* filter: brightness(96%); */
 }  
 
 @media (max-width: 550px) {
