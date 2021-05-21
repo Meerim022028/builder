@@ -14,4 +14,15 @@ body {
 .Burger {
     text-align: center;
     color: rgb(206, 145, 14);
-}                       
+}
+.strong{ 
+  
+    width: 220px;
+    margin-left: 43%;
+}
+
+@media (max-width: 550px) {
+    .strong{
+      margin-left: 8.5rem;
+    }
+  }
