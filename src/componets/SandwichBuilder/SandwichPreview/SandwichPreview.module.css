@@ -52,10 +52,11 @@
 }
      */
      .price {
-      background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(88, 0, 59));  
+      background-color: rgb(252, 162, 59);
       border-radius: 1rem;
       padding: 0 1rem;
-      padding-right: 1rem;
+      margin-right: 7rem;
+      margin-top: 12px;
       font-size: 1.9rem;
       color: rgb(255, 255, 255);
       font-weight: bold;

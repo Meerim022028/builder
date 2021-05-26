@@ -1,4 +1,4 @@
- .SandwichControl {
+ /* .SandwichControl {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -63,4 +63,50 @@
   .order {
     height: 40px;
     width: 50px;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .SandwichControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+    
+  }
+  .SandwichControl .ingredient div {
+    position: static;
+    margin: 0.5rem;
+  }
+  
+  .ingredient{
+    font-size: 1.4rem;
+    margin: .5rem;
+  }
+  
+  .Example{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .SandwichControl button:hover {
+    background-color: rgb(235, 160, 48);
+  }
+  .SandwichControl button:focus {
+    outline: none;
   }
