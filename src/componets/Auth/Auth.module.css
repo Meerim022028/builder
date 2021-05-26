@@ -1,0 +1,70 @@
+.Auth {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0;
+    flex-direction: column;
+  
+  }
+  .Auth input {
+    width: 17rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ecb247;
+    font-size: 1.3rem;
+    outline: none;
+  }
+  /* 
+  .Auth input::placeholder {
+    font-size: 16px;
+    color: grey;
+  } */
+  
+  
+  
+  
+  .teksturasanimatsue {
+    font-size: 43px;
+    color: #ecb247;
+     text-shadow: 2px 2px 4px #d89c2b; 
+    /* text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);  */
+  }
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  .AuthButton {
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 8px;
+    padding: 9px 24px;
+    position: relative;
+    border: 2px solid #ecb247 ;
+    color: #ecb247;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+  
+    border-radius: 9px;
+  }
+  
+.AuthButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+  }
+  .AuthButton:hover:after {
+    border-color: #ff18ec;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+  
+    border-radius: 9px;
+  }
