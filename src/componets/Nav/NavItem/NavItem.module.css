@@ -4,18 +4,22 @@
   text-decoration: none;
   padding: .6rem 1rem .4rem;
   transition: all .2s ease-in;
-}
+ }
+
+ 
 .NavItem a:hover {
   border-color: white; 
-  background-color: rgb(255, 180, 19);
-  border-bottom: 7px 5px solid white; 
-
+  background-color: rgb(255, 174, 0);
+  /* border-bottom: 7px 5px solid rgb(189, 75, 75);   */
 
 }
 .NavItem a:active,
 .NavItem a.active {
   border-color: white;
-}
+} 
+
+ 
+
 
 @media (max-width: 632px) {
   .NavItem a {
