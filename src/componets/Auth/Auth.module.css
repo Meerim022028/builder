@@ -62,9 +62,8 @@
     transition: .4s;
   }
   .AuthButton:hover:after {
-    border-color: #ff18ec;
-    width: calc(100% - 10px);
-    height: calc(100% + 10px);
+    border-color:#ecb247;
+   
   
     border-radius: 9px;
   }
